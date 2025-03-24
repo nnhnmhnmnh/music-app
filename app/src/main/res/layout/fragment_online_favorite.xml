@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".OnlineFavoriteFragment">
+
+    <TextView
+        android:id="@+id/textViewNoFavorite"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="Không có bài hát trong danh sách yêu thích"
+        android:textColor="#939393"
+        android:textSize="20sp" />
+
+    <SearchView
+        android:id="@+id/searchFavorite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:iconifiedByDefault="false"
+        android:queryBackground="@android:color/white"
+        android:queryHint="Tìm kiếm tên bài hát hoặc nghệ sĩ"
+        android:submitBackground="@android:color/darker_gray" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewFavorite"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

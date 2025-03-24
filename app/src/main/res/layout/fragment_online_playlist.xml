@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".OnlinePlaylistFragment">
+
+    <TextView
+        android:id="@+id/textViewNoPlaylist"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="Chưa có bài hát nào được thêm vào danh sách phát"
+        android:textColor="#939393"
+        android:textSize="20sp" />
+
+    <SearchView
+        android:id="@+id/searchPlaylist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:iconifiedByDefault="false"
+        android:submitBackground="@android:color/darker_gray"
+        android:queryBackground="@android:color/white"
+        android:queryHint="Tìm kiếm tên bài hát hoặc nghệ sĩ" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewPlaylist"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>
