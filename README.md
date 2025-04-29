@@ -62,7 +62,7 @@ This app allows users to search, listen to, manage, and share music conveniently
 ### 2. How to Setup
 
 ```bash
-git clone https://github.com/yourusername/music-app.git
+git clone https://github.com/nnhnmhnmnh/music-app.git
 cd music-app
 ```
 
